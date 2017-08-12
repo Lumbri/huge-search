@@ -14,6 +14,10 @@ body {
 	background: #f1f1f1;
     color: rgba(145,145,145,0.7);
 }
+input[type="search"] { 
+/*    -webkit-appearance: textfield;*/
+    box-sizing: border-box;
+}
 .ba-hugesearch {
 	padding-top: 40px;
 }
@@ -36,10 +40,7 @@ body {
 .ba-hugesearch-input::-ms-clear { 
     display: none;
 }
-input[type="search"] { 
-    -webkit-appearance: textfield;
-    box-sizing: border-box;
-}
+
 
 .ba-hugesearch-input::-webkit-input-placeholder {
 	color: #c2c2c2;
@@ -57,15 +58,9 @@ input[type="search"] {
 	color: #c2c2c2;
 }
 
-/* hide placeholder when active in Chrome */
-.gn-search:focus::-webkit-input-placeholder {
-	color: transparent;
-}
 
 .ba-hugesearch-input:focus,
-.ba-hugesearch-submit:focus {
-	outline: none;
-}
+
 
 .ba-hugesearch-submit {
 	position: absolute;
@@ -87,6 +82,10 @@ input[type="search"] {
 .ba-hugesearch-submit:hover {
 	-webkit-transform: translate3d(0,-50%,0) scale(1.1);
 	transform: translate3d(0,-50%,0) scale(1.1);
+}
+
+.ba-hugesearch-submit:focus {
+	outline: none;
 }
 .ba-hugesearch-content {
 	color: #333;
